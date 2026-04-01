@@ -12,3 +12,10 @@ func _ready():
 	pass # Replace with function body.
 	
 	
+#changes look of card str(suit)
+func _init(var s, var v):
+	value = v
+	suit = s
+	face = load("res://icon.svg")
+	
+	
