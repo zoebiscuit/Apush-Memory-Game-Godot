@@ -11,12 +11,14 @@ config_version=5
 [application]
 
 config/name="APUSH Memory Game 2.0"
+run/main_scene="uid://b0ynsveiwv1mv"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameManager="*res://GameManager.gd"
+Class="*res://Card.gd"
 
 [display]
 

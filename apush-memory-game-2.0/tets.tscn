@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf5pwae5q4pwx"]
+
+[ext_resource type="Script" uid="uid://djytaj58janat" path="res://test.gd" id="1_dtusa"]
+
+[node name="card" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_dtusa")
+message = "Taco?"
+answer = "Banana."
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 182.0
+offset_bottom = 93.0
+
+[node name="Q_mask" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Q" type="RichTextLabel" parent="Q_mask"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 32.0
+offset_right = 135.0
+offset_bottom = 72.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Question"
+
+[node name="A_mask" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="A" type="RichTextLabel" parent="A_mask"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 31.0
+offset_right = 140.0
+offset_bottom = 61.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Answer"
+
+[connection signal="pressed" from="Q_mask" to="." method="Question"]
+[connection signal="pressed" from="A_mask" to="." method="Answer"]

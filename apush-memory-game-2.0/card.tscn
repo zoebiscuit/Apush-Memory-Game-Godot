@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://hvtb52uhmxh7"]
+
+[ext_resource type="Script" uid="uid://cwgvmhohngn71" path="res://Card.gd" id="1_kikvd"]
+
+[node name="Card" type="TextureButton"]
+script = ExtResource("1_kikvd")
